@@ -31,8 +31,7 @@ RUN sed -i 's/dl-cdn.alpinelinux.org/mirrors.ustc.edu.cn/g' /etc/apk/repositorie
 WORKDIR /data/mobilequery/
 
 RUN mkdir bin/
-RUN mkdir -p dict/
-COPY dict/*  /data/mobilequery/dict/
+COPY bin/phone.dat  /data/mobilequery/bin/phone.dat
 COPY --from=0 /data/mobilequery/bin/mobilequery bin/
 
 HEALTHCHECK --interval=5s --timeout=5s --retries=3 \

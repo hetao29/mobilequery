@@ -4,7 +4,7 @@ go 1.21
 
 require (
 	github.com/gin-gonic/gin v1.9.1
-	github.com/xluohome/phonedata v0.0.0-20230225041646-934554285b90
+	github.com/hetao29/phonedata v0.0.0-20231104040209-f88737ca7875
 )
 
 require (
