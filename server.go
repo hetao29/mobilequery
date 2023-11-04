@@ -36,7 +36,7 @@ func main() {
 		mobile := c.DefaultQuery("mobile", "")
 		pr, err := phonedata.Find(mobile)
 		if err != nil {
-			c.JSON(400, gin.H{
+			c.JSON(200, gin.H{
 				"message": "pong",
 			})
 		} else {
